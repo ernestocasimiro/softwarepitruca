@@ -14,14 +14,9 @@ if(isset($_POST['fname']) &&
    isset($_POST['notas'])){
 
 
-
-
-
-
-
    }else{
     $em = "Ocorreu um erro!";
-    header("Location: admin/req/teacher-add.php?error=$em");
+    header("Location: ../teacher-add.php?error=$em");
     exit;
    }
 

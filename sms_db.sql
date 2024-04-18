@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `lname` varchar(127) NOT NULL,
   PRIMARY KEY (`admin_id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `admin`
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `disciplinas` (
   `disciplina` varchar(31) NOT NULL,
   `disciplina_code` varchar(31) NOT NULL,
   PRIMARY KEY (`disciplina_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `disciplinas`
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `estudantes` (
   `lname` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `notas` (
   `nota` varchar(31) NOT NULL,
   `nota_code` varchar(31) NOT NULL,
   PRIMARY KEY (`nota_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `notas`
@@ -125,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `professores` (
   `notas` int NOT NULL,
   PRIMARY KEY (`teacher_id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `professores`
